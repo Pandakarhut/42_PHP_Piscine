@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+	crossorigin="anonymous"></script>
+	<title>TO DO</title>
+	<style>
+		body{
+			background-color: rgba(255, 251, 245, 0.87);
+		}
+		#title{
+			
+			text-align: center;
+			font-size: large;
+			font-family: 'Courier New', Courier, monospace;
+			border: inset 3px rgba(202, 202, 202, 0.527);
+			border-radius: 10px;
+			background-color:rgba(206, 255, 255, 0.753);
+			box-shadow: 4px 4px 5px rgba(202, 202, 202, 0.527);
+			width:50%;
+			margin: auto;
+		}
+		.li{
+			font-size: large;
+			font-family: 'Courier New', Courier, monospace; 
+			background-color: rgba(250, 235, 215, 0.87);
+			border: inset 2px rgba(202, 202, 202, 0.527);
+			border-radius: 10px;
+			box-shadow: 8px 8px 2px rgb(209, 209, 209);
+			width: 70%;
+			margin: 1vw auto 1vw auto;
+			padding: 12px;
+			transition: background-color .6s ease, transform .6s;
+		}
+		.li:hover{
+			transform: scale(1.05);
+			background-color: rgba(255, 245, 233, 0.877);
+		}
+		#New{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: auto;
+			margin-top: 2vh;
+			width: 10%;
+			border: outset 2px rgb(255, 237, 133);
+			box-shadow: 6px 6px 9px rgba(128, 128, 128, 0.582);
+			font-family: 'Courier New', Courier, monospace;
+			font-size: large;
+			transition: background-color .6s ease;
+		}
+		#New:hover{
+			background-color: rgb(209, 209, 209);
+		}
+	</style>
+</head>
+<body>
+	<div id="title">
+		<h1>TO DO LIST!</h1>
+	</div>
+	<button id="New">New</button>
+	<div id="ft_list">
+	</div>
+	<br><br>
+	<script src="todo.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="scumm.css">
+	<title>Day of the 42</title>
+</head>
+<body>
+	<header id="header">
+		<div id="logo">
+			<img src="resources/day_of_the_42.png" alt="Day of the 42" 
+			style="width:100%; padding: 2%;">
+		</div>
+		<div id="loupe">
+			<img id="glasses" src="resources/loupe.png" alt="loupe" onclick="imgZoom()">
+		</div>
+		<div class="icons">
+			<div id="reload">
+				<a href="https://www.disney.com" target="_blank">
+					<img src="resources/reload.png" title="Start from the beginning" 
+					alt="reload" style="width:80%">
+				</a>
+			</div>
+			<div id="close">
+				<a href="https://www.relaischateaux.com" target="_blank">
+					<img src="resources/close.gif" title="Disconnect" 
+					alt="close" style="width:80%">
+				</a>
+			</div>
+		</div>
+	</header>
+	<div class="leftbar">
+		<div class="images_block">
+			<img class="l_img" title="Move" src="resources/arrow.png" alt="Move" onclick="move()">
+			<img class="l_img" title="Take" src="resources/main.png" alt="Take" onclick="take()">
+			<img class="l_img" title="Look" src="resources/oeil.png" alt="Look" onclick="look()">
+			<img class="l_img" title="Use" src="resources/outil.png" alt="Use" onclick="sett()">
+			<img class="l_img" title="Speak" src="resources/chat-icon.png" alt="Speak"
+			onclick="displayChat()">
+		</div>
+	</div>
+	<div id="markdown">
+		<iframe width="100%" height="480" src="https://my.matterport.com/show/?m=aynzcHbDp48"
+		frameborder="0" allowfullscreen allow="xr-spatial-tracking"></iframe>
+	</div>
+	<div id="centerimg">
+			<img id="clust" src="resources/cluster.jpg" alt="cluster image"
+			usemap="#clustmap">
+			<div id="lady1">
+				<h3>why is it so cold in here,<br>bocal help please</h3>
+			</div>
+			<div id="guy1">
+				<h3>I am wondering in the unknown,<br>please let me be</h3>
+			</div>
+			<div id="lady2">
+				<h3>Vole voce she,<br>avec moi</h3>
+			</div>
+			<div id="guy2">
+				<h3>I am walking away,<br>from the troubles in my life</h3>
+			</div>
+	</div>
+	<map name="clustmap">
+			<area title="imac" shape="rect" coords="1080, 450, 1310, 590" 
+			href="https://www.apple.com" target="_blank" alt="imac device">
+			<area title="work chair" shape="rect" coords="450, 650, 550, 450"
+			href="https://www.ikea.com" target="_blank" alt="Ikea chair">
+			<area title="lady1" shape="rect" coords="50, 320, 100, 550" 
+			onclick="lady1()" alt="student">
+			<area title="guy1" shape="rect" coords="220, 350, 260, 450" 
+			onclick="guy1()" alt="student">
+			<area title="lady2" shape="rect" coords="520, 330, 560, 380" 
+			onclick="lady2()" alt="student">
+			<area title="guy2" shape="rect" coords="630, 330, 690, 380" 
+			onclick="guy2()" alt="student">
+	</map>
+	<div id="rightbar">
+		<div class="images_block">
+			<a href="https://www.hive.fi/en/curriculum" target="__blank">
+				<img class="r_img" title="student's guide" alt="guide book" src="resources/book.png">
+			</a>
+			<img class="r_img" title="clean your screen" alt="towel" src="resources/towel.png"
+			onclick="clean()">
+			<div id="bricks" onclick="hitHead()"></div>
+		</div>
+	</div>
+	<div id="lowerbox">
+		<p>vous <span style="font-size: 2vw; font-family: Georgia, 'Times New Roman', Times, serif;">entrez</span> alors dans une grande piece remplie</p>
+		<p>d'<span id="p" style="text-shadow: 5px 5px 4px red;">ordinateurs</span>...</p>
+		<p>- <i>Bonjour, vous êtes nouveau ici ?</i></p>
+		<form class="formpart" action="#">
+			<input type="text" size="68" 
+			style="padding: 1px; margin-right: 5px; border: 2px inset rgb(182, 179, 179);">
+			<input id="sbmt" type="submit" value="Repondre" onclick="greetings()">
+		</form>
+	</div>
+	<div id="settings">
+		<h1>
+			Settings<br> 
+			1- click on 'move' icon " the green arrow" to speak to students.<br> 
+			2- click on the elements on the left and right bar for some actions.<br> 
+			3- use the towel on the right to clean the screen from the messages.<br> 
+			4- have fun :)
+		</h1>
+	</div>
+	<script src="scumm.js"></script>
+	<div>
+		<img src="resources/doft.jpg" hidden>
+	</div>
+</body>
+</html>

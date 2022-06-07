@@ -1,0 +1,75 @@
+ul {
+	padding: 1vw;
+	margin: 0.5vw;
+	background-color: rgb(236, 242, 250);
+}
+
+a {
+	display: block;
+	text-decoration: none;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 2vw;
+}
+
+li {
+	display: block;
+	float: left;
+}
+
+li ul li {
+	float: none;
+}
+
+li ul,
+#hid ul li ul {
+	display: none;
+}
+
+li:hover ul {
+	display: block;
+}
+
+#hid:hover ul li ul {
+	display: block;
+}
+
+#hid:hover #hid2 ul li ul {
+	display: none;
+}
+
+#hid:hover #hid2:hover ul li ul {
+	display: block;
+}
+
+li ul,
+#hid3 ul li ul {
+	display: none;
+}
+
+#hid3:hover ul li ul {
+	display: block;
+}
+
+#menu {
+	height: 5vw;
+}
+
+#menu li {
+	background-color: #FFF;
+	border: solid 1px #CCC;
+}
+
+#menu li:hover {
+	background-color: #CCC;
+}
+
+#menu a {
+	color: #116582;
+	padding: 1vw 1.5vw 1vw 1.5vw;
+	font-size: larger;
+	font: bold;
+}
+
+#menu a:hover {
+	color: rgb(190, 45, 60);
+}

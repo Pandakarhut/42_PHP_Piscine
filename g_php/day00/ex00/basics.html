@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>
+			Basics
+		</title>
+		<style>
+			body {
+				background-color: pink;
+				font-family: "Poppins", sans-serif;
+				margin: 0;
+			}
+			h1 {
+				color: white;
+				text-align: center;
+				font-size: 50px;
+			}
+			/*images be resizeable*/
+			img {
+				max-width: 100%;
+				height: auto;
+				width: auto\9; /* ie8 */
+			}
+			/*make separet boxes side by side*/
+			.row {
+				display: flex;
+				padding: 70px;
+			}
+			/*split div to 3 piece and give some style to it*/
+			.column {
+				flex: 33.33%;
+				float: center;
+				padding: 5px;
+				box-shadow: 0 0 10px 2px #3333331a;
+				border-radius: 3px;
+				border-radius: 3px;
+				overflow: hidden;
+				width: 550px;
+			}
+			/*under images text*/
+			.text {
+				text-align: center;
+			}
+			/*gap between two images without the styles*/
+			.gap {
+				flex: 33.33;
+			}
+			hr {
+				border-top: 2px solid grey
+			}
+			.copyright {
+				text-align: right;
+				font-family: monospace;
+				font-style: italic;
+				margin: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>BIG # éí$@%^&*éœœaå</h1>
+		<div class="row">
+			<div class="column">
+				<img height="150em" src="https://github.com/mobahug/PHP_Piscine_42/blob/main/day00/ex00/pngegg.png?raw=true"
+				title="For Zalando shoping click here">
+				<p class="text">
+					<a href="https://www.zalando.fi/lapset-home/">Zalando, Click Here</a>
+				</p>
+			</div>
+			<div class="gap">
+
+			</div>
+			<div class="column">
+				<img height="150em" src="https://github.com/mobahug/PHP_Piscine_42/blob/main/day00/ex00/logo-zara-transparent-background-PNG%20(1).png?raw=true"
+				title="For Zara shoping click here">
+				<p class="text">
+					<a href="https://www.zara.com/fi/">Zara, Click Here</a>
+				</p>
+			</div>
+		</div>
+	</body>
+	<hr>
+	<footer>
+		<div class="copyright">
+			<p>
+				© ghorvath 2022
+			</p>
+		</div>
+	</footer>
+</html>

@@ -1,0 +1,213 @@
+html {
+	background-color: #525455;
+}
+
+#header {
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 2vh;
+	width: 75%;
+	height: 13vh;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 5px;
+	box-shadow: 10px 10px 10px black;
+	background-color: #8f8f8f;
+}
+
+#logo {
+	width: 30%;
+}
+
+#loupe {
+	margin-left: auto;
+	margin-top: 1.5vh;
+}
+
+#glasses {
+	width: 12vw;
+	margin-top: 1vh;
+}
+
+.icons {
+	width: 2%;
+	height: 90%;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#close {
+	display: block;
+	margin-top: 6vh;
+}
+
+.leftbar {
+	width: 7vw;
+	height: 46vh;
+	float: left;
+	margin: 3vh -100% 0 14.5%;
+	background: #8f8f8f;
+	border-radius: 10px;
+	box-shadow: 10px 10px 12px black;
+}
+
+.images_block{
+	padding-top: 10px;
+}
+
+.l_img
+{
+	display: block;
+	max-width: 51%;
+	max-height: 50%;
+	margin: auto;
+	padding: 5%;
+	text-align: center;
+}
+
+.l_img:hover, .r_img:hover{
+	border: 5px solid red; 
+	border-radius: 5px; 
+	padding: 0%;
+}
+
+#centerimg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#clust {
+	width: 53%;
+	margin: 3vh auto auto auto;
+	border: solid #8f8f8f;
+	border-width: 10px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 12px black;
+}
+
+#rightbar {
+	width: 7vw;
+	height: 46vh;
+	float: right;
+	margin: -63.6vh 14.5% 10vh 0;
+	background: #8f8f8f;
+	border-radius: 10px;
+	box-shadow: 10px 10px 12px black;
+}
+
+.r_img
+{
+	display: block;
+	max-width: 53%;
+	max-height: 53%;
+	margin: auto;
+	padding: 5%;
+	text-align: center;
+}
+
+#bricks{
+	background-image: url("resources/brick.jpg");
+	background-size: 1.5vw;
+	width: 10vw;
+	max-width: 89%;
+	height: 7vh;
+	margin: auto;
+}
+
+#lowerbox {
+	display: none;
+	position: relative;
+	background-color: #88ff89;
+	border-radius: 10px;
+	max-width: 25%;
+	max-height: 100%;
+	padding: 10px;
+	padding-bottom: 80px;
+	line-height: 3px;
+	box-shadow: 10px 10px 5px black;
+	margin: -4% 0 0 11%;
+}
+
+#settings {
+	display:none;
+	margin:2vh auto;
+	background:#88ff89;
+	border-radius: 10px;
+	max-width: 25%;
+	max-height: 100%;
+	padding: 10px;
+	box-shadow: 10px 10px 5px black;
+	font-size: 8px;
+	font-family: 'Lucida Sans Regular';
+}
+
+#lowerbox > p, #p {
+	font-size: 0.8vw;
+	font-family: sans-serif;
+}
+
+#markdown{
+	display: none;
+	width: 53%;
+	justify-content: center;
+	align-items: center;
+	margin: 3vh auto auto auto;
+	border: solid #8f8f8f;
+	border-width: 10px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 12px black;
+}
+
+#lady1{
+	display: none;
+	position: absolute;
+	background-color: greenyellow;
+	border: solid 1px black;
+	border-radius: 50px;
+	padding: 5px;
+	margin-bottom: 15vh;
+	margin-right: 40vw;
+}
+
+#guy1{
+	display: none;
+	position: absolute;
+	background-color: greenyellow;
+	border: solid 1px black;
+	border-radius: 50px;
+	padding: 5px;
+	margin-top: 15vh;
+	margin-right: 25vw;
+}
+
+#lady2{
+	display: none;
+	position: absolute;
+	background-color: greenyellow;
+	border: solid 1px black;
+	border-radius: 50px;
+	padding: 5px;
+	margin-bottom: 15vh;
+	margin-right: 15vw;
+}
+
+#guy2{
+	display: none;
+	position: absolute;
+	background-color: greenyellow;
+	border: solid 1px black;
+	border-radius: 50px;
+	padding: 5px;
+	margin-bottom: 15vh;
+	margin-left: 8vw;
+}
+
+#sbmt{
+	width: 3vw;
+	border: outset 1px rgb(195, 195, 195);
+	border-radius: 2px;
+}
