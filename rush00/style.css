@@ -1,0 +1,143 @@
+body {
+    margin: auto;
+    width: 1200px;
+}
+
+div.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border: 3px solid darkcyan;
+}
+
+div.header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color: darkcyan;
+}
+
+div.basket {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+a.basket {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+div.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+p.loggedin {
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 20px;
+    color: white;
+}
+
+p.loggedin > a {
+    color: white;
+}
+
+form {
+    margin: 0;
+}
+
+input {
+    font-size: 18px;
+}
+
+
+div.main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: lightcyan;
+}
+
+span.error, span.welcome{
+    font-size: 30px;
+    color: darkcyan;
+    font-weight: bold;
+    margin: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    width: 100%;
+}
+span.errortitle, span.welcometitle {
+    font-size: 40px;
+    color: darkcyan;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 3px solid darkcyan;
+}
+
+span.category-list {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+div.leftNav {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 800px;
+    background-color: lightcyan;
+    border-right: 3px solid darkcyan;
+}
+
+a.category {
+    color: darkcyan;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+div.content {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 1000px;
+    height: 100%;
+}
+
+ul.navigation {
+    list-style-type: none;
+    margin: 10px 0px 20px 10px;
+    padding: 0px;
+}
+
+ul.navigation > li.header {
+    color: darkcyan;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+ul.navigation > li {
+    margin-top: 7px;
+}
+
+input.num_field {
+    width: 80px; 
+    font-size: 14px;
+}
+input.text_field {
+    width: 200px;
+}
