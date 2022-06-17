@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+</head>
+
+<body>
+	<div>
+		<input type="text" id="nb1">
+		<select id="operator">
+			<option value="add">+</option>
+			<option value="sub">-</option>
+			<option value="mul">*</option>
+			<option value="div">/</option>
+			<option value="mod">%</option>
+		</select>
+		<input type="text" id="nb2">
+		<input type="submit" value="Try me!" onclick="calculate();">
+	</div>
+</body>
+
+<script>
+	setInterval("alert"("Please, use me..."), 30000);
+	var nb1 = document.getElementById("nb1");
+	var nb2 = document.getElementById("nb2");
+	var op = document.getElementById("operator");
+
+	function calculate() {
+
+		if (nb1 < 0 || nb2 < 0)
+		// !Number.isInteger(nb1) or isNaN(nb1)
+			alert("Error :(");
+		else if ((nb1 > 0 && nb2 == 0) && (op == "/" || op == "%")) {
+			alert("It's over 9000!");
+			console.log("It's over 9000!");
+		}
+		else {
+			nb1 = Number(nb1);
+			nb2 = Number(nb2);
+			var result = arthCalc();
+			alert(result);
+			console.log(result);
+		}
+	function arthCalc(nb1, nb2, op) {
+		switch (op) {
+			case '+':
+				result = nb1 + nb2;
+				break;
+			case '-':
+				result = nb1 - nb2;
+				break;
+			case '*':
+				result = nb1 * nb2;
+				break;
+			case '/':
+				result = nb1 / nb2;
+				break;
+			case '%':
+				result = nb1 % nb2;
+				break;
+		}
+		return (result);
+	}
+	}
+</script>
+
+</html>

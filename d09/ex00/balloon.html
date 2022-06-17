@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Balloon</title>
+	<style>
+		body {
+			margin: 0;
+		}
+
+		#ballon {
+			background-color: red;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			margin: 25%;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="balloon"></div>
+</body>
+
+<script>
+	var size = 200;
+	var i = 0;
+	const colorArr = ['red', 'green', 'blue'];
+	var qiqiu = document.getElementById('balloon');
+
+	qiqiu.onload = function main() {
+		addEventListener("click", onClick);
+		addEventListener("mouseout", mouseOut);
+	}
+
+	function onClick() {
+
+	}
+</script>
+
+</html>
