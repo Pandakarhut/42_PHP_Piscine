@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Balloon</title>
-	<style>
-		body {
-			margin: 0;
-		}
+  <head>
+    <meta charset="UTF-8" />
+    <title>Balloon</title>
+    <style>
+      #balloon {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 25%;
+      }
+    </style>
+  </head>
 
-		#ballon {
-			background-color: red;
-			width: 200px;
-			height: 200px;
-			border-radius: 50%;
-			margin: 25%;
-		}
-	</style>
-</head>
+  <body>
+    <div id="balloon"></div>
+  </body>
 
-<body>
-	<div id="balloon"></div>
-</body>
+  <script>
+    var size = 200;
+    var i = 0;
+    const colorArr = ["red", "green", "blue"];
+    var qiqiu = document.getElementById("balloon");
+    qiqiu.addEventListener("click", onClick);
+    qiqiu.addEventListener("mouseout", mouseOut);
 
-<script>
-	var size = 200;
-	var i = 0;
-	const colorArr = ['red', 'green', 'blue'];
-	var qiqiu = document.getElementById('balloon');
+    function onClick() {
+      size += 10;
+      if (size > 420) size = 200;
+      qiqiu.style.width = size + "px";
+      qiqiu.style.height = size + "px";
 
-	qiqiu.onload = function main() {
-		addEventListener("click", onClick);
-		addEventListener("mouseout", mouseOut);
-	}
+      i++;
+      qiqiu.style.backgroundColor = colorArr[i % 3];
+    }
 
-	function onClick() {
+    function mouseOut() {
+      size -= 5;
+      if (size < 200) size = 200;
+      qiqiu.style.width = size + "px";
+      qiqiu.style.height = size + "px";
 
-	}
-</script>
-
+      i--;
+      if (i < 0) i = 2;
+      qiqiu.style.backgroundColor = colorArr[i % 3];
+    }
+  </script>
 </html>
