@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script>
+      setInterval(pleaseUseMe, 30000);
+
+      $(document).ready(function(){
+  			$("#submit").on("click", function(){
+          var nb1_input = $("#nb1");
+          var nb2_input = $("#nb2");
+          var sign = $("#operator").val();
+
+          var nb1 = Number(nb1_input.val());
+          var nb2 = Number(nb2_input.val());
+
+          if (!Number.isInteger(nb1) ||
+          !Number.isInteger(nb2) ||
+          isNaN(nb1_input.val()) ||
+          isNaN(nb2_input.val()) ||
+          nb1_input.val() == '' ||
+          nb2_input.val() == '' ||
+          nb1 < 0 ||
+          nb2 < 0)
+            alert("Error :(");
+          else if (nb2 == 0 && (sign == "/" || sign == "%")) {
+            alert("It's over 9000!");
+            console.log("It's over 9000!");
+          } else {
+            var result = eval(nb1 + sign + nb2);
+            alert(result);
+            console.log(result);
+          }
+        });
+      });
+
+      function pleaseUseMe() {
+        alert("Please, use me...");
+      }
+
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <input type="text" id="nb1" />
+      <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+      </select>
+      <input type="text" id="nb2" />
+      <input type="button" id="submit" value="Try me!" />
+    </div>
+  </body>
+</html>
